@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BatchChangeEvent",
+  "description": "Audit record for every fluid batch change in a circuit",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp",
+    "circuit_id",
+    "old_batch_id",
+    "new_batch_id",
+    "operator"
+  ],
+  "properties": {
+    "event_id": { "type": "string", "format": "uuid" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "circuit_id": { "type": "string" },
+    "old_batch_id": { "type": "string" },
+    "new_batch_id": { "type": "string" },
+    "reason": {
+      "type": "string",
+      "enum": ["degradation", "contamination", "scheduled", "emergency", "upgrade"]
+    },
+    "operator": { "type": "string" },
+    "conductivity_before": { "type": "number" },
+    "conductivity_after": { "type": "number" }
+  }
+}

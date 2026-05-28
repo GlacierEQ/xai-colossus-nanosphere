@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FluidState",
+  "description": "Nanofluid batch state record — consumed by cooling and maintenance layers",
+  "type": "object",
+  "required": [
+    "batch_id",
+    "timestamp",
+    "circuit_id",
+    "base_fluid",
+    "nanoparticle",
+    "volume_fraction_pct",
+    "conductivity_w_mk",
+    "status"
+  ],
+  "properties": {
+    "batch_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "circuit_id": {
+      "type": "string",
+      "description": "Linked cooling circuit in xai-colossus-cooling"
+    },
+    "base_fluid": {
+      "type": "string",
+      "enum": ["water", "ethylene_glycol", "water_eg_50_50", "propylene_glycol"]
+    },
+    "nanoparticle": {
+      "type": "string",
+      "enum": ["Al2O3", "TiO2", "CuO", "graphene", "SiC", "ZnO", "Fe3O4"]
+    },
+    "particle_shape": {
+      "type": "string",
+      "enum": ["sphere", "cylinder", "blade", "platelet"],
+      "default": "sphere"
+    },
+    "volume_fraction_pct": { "type": "number", "minimum": 0, "maximum": 10 },
+    "conductivity_w_mk": {
+      "type": "number",
+      "description": "Effective thermal conductivity W/m·K"
+    },
+    "temperature_c": { "type": "number" },
+    "age_days": { "type": "integer", "minimum": 0 },
+    "degradation_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+    "status": {
+      "type": "string",
+      "enum": ["active", "degraded", "replacement_due", "retired"]
+    },
+    "replacement_due": { "type": "boolean" }
+  }
+}
