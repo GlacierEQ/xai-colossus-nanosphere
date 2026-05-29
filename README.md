@@ -1,7 +1,10 @@
 # xai-colossus-nanosphere
 
-**Domain:** Nanofluid Thermal Carriers, Bio-Inspired Fluid Dynamics, Advanced Coolant Materials  
-Part of the [GlacierEQ xAI Colossus 2 Repo Family](https://github.com/GlacierEQ)
+> **Nanoscale Infrastructure: Silicon Telemetry & Advanced Material Dynamics**
+
+[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/GlacierEQ/xai-colossus-nanosphere)
+[![Tech](https://img.shields.io/badge/technology-TSMC%20%7C%20CoWoS--L-blue)](https://github.com/GlacierEQ/xai-colossus-nanosphere)
+[![Part of](https://img.shields.io/badge/part%20of-xai--colossus--community-orange)](https://github.com/GlacierEQ/xai-colossus-community)
 
 ---
 
