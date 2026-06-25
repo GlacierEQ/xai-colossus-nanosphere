@@ -1,6 +1,6 @@
 """
 stability_model.py — Nanofluid Stability and Sedimentation Risk Engine
-GlacierEQ Sovereign Stack | APEX Architecture
+GlacierEQ APEX Stack | APEX Architecture
 
 Tracks colloidal stability of nanofluid suspensions using:
   - Zeta potential proxy (electrostatic repulsion between particles)

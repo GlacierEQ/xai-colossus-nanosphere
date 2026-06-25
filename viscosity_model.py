@@ -1,6 +1,6 @@
 """
 viscosity_model.py — Nanofluid Viscosity and Pump Penalty Engine
-GlacierEQ Sovereign Stack | APEX Architecture
+GlacierEQ APEX Stack | APEX Architecture
 
 Models effective viscosity of nanofluid suspensions using the
 Einstein + Batchelor model for dilute suspensions (phi < 0.10)

@@ -1,6 +1,6 @@
 """
 circuit_optimizer.py — Multi-Objective Blend Selection Engine
-GlacierEQ Sovereign Stack | APEX Architecture
+GlacierEQ APEX Stack | APEX Architecture
 
 Selects the optimal nanofluid blend for a given Colossus 2 cooling circuit
 by balancing four competing objectives:

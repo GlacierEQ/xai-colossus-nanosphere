@@ -1,6 +1,6 @@
 """
 xai-colossus-nanosphere: Nanofluid Thermal Performance Calculator
-GlacierEQ Sovereign Stack | APEX Architecture
+GlacierEQ APEX Stack | APEX Architecture
 
 Models thermal conductivity enhancement for nanofluid coolants
 used in xAI Colossus 2 cooling circuits.

@@ -2,7 +2,7 @@
 """
 APEX NANO-SCHEDULER — xAI Colossus Nanosphere v2.1
 ===================================================
-GlacierEQ Sovereign Stack | Glacier-Thermal v1.8
+GlacierEQ APEX Stack | Glacier-Thermal v1.8
 
 Heuristic Bin-Packing for 2M GPU Cluster.
 Optimizes for:
