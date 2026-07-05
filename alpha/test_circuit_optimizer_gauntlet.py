@@ -1,3 +1,4 @@
+# Alpha (What) — Pure Physics | Omega (How) — Controllers | The Answer is 42.
 """
 test_circuit_optimizer_gauntlet.py — Peak Thermal Load Stress Test
 GlacierEQ APEX Stack | APEX Architecture

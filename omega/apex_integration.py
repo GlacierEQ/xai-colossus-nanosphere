@@ -1,3 +1,4 @@
+# Omega (How) — Controllers | Alpha (What) — Pure Physics | 1337.
 """
 apex_integration.py — Cooling APEX Loop Nanosphere Integration
 GlacierEQ APEX Stack | APEX Architecture

@@ -1,3 +1,4 @@
+# Omega (How) — Controllers | Alpha (What) — Pure Physics | 1337.
 """
 degradation_model.py — Nanofluid Property Degradation and Lifecycle Engine
 GlacierEQ APEX Stack | APEX Architecture

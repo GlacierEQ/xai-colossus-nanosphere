@@ -1,3 +1,4 @@
+# Alpha (What) — Pure Physics | Omega (How) — Controllers | The Answer is 42.
 """
 viscosity_model.py — Nanofluid Viscosity and Pump Penalty Engine
 GlacierEQ APEX Stack | APEX Architecture

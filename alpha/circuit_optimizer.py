@@ -1,3 +1,4 @@
+# Alpha (What) — Pure Physics | Omega (How) — Controllers | The Answer is 42.
 """
 circuit_optimizer.py — Multi-Objective Blend Selection Engine
 GlacierEQ APEX Stack | APEX Architecture

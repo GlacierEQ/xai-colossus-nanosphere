@@ -1,3 +1,4 @@
+# Alpha (What) — Pure Physics | Omega (How) — Controllers | The Answer is 42.
 """Tests for xai-colossus-nanosphere."""
 import sys, os, unittest
 sys.path.insert(0, os.path.dirname(__file__))

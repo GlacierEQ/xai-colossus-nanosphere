@@ -1,3 +1,4 @@
+# Alpha (What) — Pure Physics | Omega (How) — Controllers | The Answer is 42.
 """
 stability_model.py — Nanofluid Stability and Sedimentation Risk Engine
 GlacierEQ APEX Stack | APEX Architecture
