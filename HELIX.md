@@ -1,23 +1,21 @@
-# 🔱 Double Helix Architecture
+# xai-colossus-nanosphere — Double Helix Architecture
 
-> Alpha (What) + Omega (How) = Complete system.
+## Alpha (What) — Pure Physics
+Stateless computation, mathematical models, no side effects.
 
-## Alpha Strand
+## Omega (How) — Controllers
+Orchestration, state management, external integrations.
 
-Domain models, physics, analytical core.
+## Flow
+```
+Alpha Models → Omega Controllers → Mastermind Sidecar → Shadow Infrastructure
+```
 
-## Omega Strand
+## Files
+- `alpha/` — Physics models, simulations, equations
+- `omega/` — Controllers, daemons, APIs
+- `mastermind_sidecar.py` — Cross-domain health reporting
 
-Orchestration, deployment, operational intelligence.
+---
 
-## Interlock
-
-Alpha and Omega communicate through:
-1. Interface contracts
-2. Event buses
-3. Health reporting
-
-## Pro-Code Binding
-
-7-gate audit applies to all code in this repo.
-See PRO_CODE_AUDIT.md for gate status.
+*Double Helix Architecture | GlacierEQ*
