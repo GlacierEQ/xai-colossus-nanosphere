@@ -177,15 +177,31 @@ def stability_status(score: float) -> str:
 
 
 def estimated_remaining_days_to_monitor(spec: StabilitySpec) -> float:
-    """Estimate scenario days until the score falls below 60 from current age."""
+    """Estimate scenario days until the score falls below 60 from current age.
 
-    current = stability_score(spec)
-    if current <= 60.0:
+    Returns infinity when the configured maximum age penalty cannot drive the
+    otherwise fixed scenario below the threshold.
+    """
+
+    zero_age_spec = StabilitySpec(
+        nanoparticle=spec.nanoparticle,
+        base_fluid=spec.base_fluid,
+        volume_fraction=spec.volume_fraction,
+        particle_size_nm=spec.particle_size_nm,
+        zeta_mv=spec.zeta_mv,
+        age_days=0,
+        temperature_c=spec.temperature_c,
+        circuit_id=spec.circuit_id,
+        batch_id=spec.batch_id,
+    )
+    base_score = stability_score(zero_age_spec)
+    current_score = stability_score(spec)
+    if current_score <= 60.0:
         return 0.0
-    if AGE_PENALTY_PER_DAY <= 0.0:
+    if base_score - MAX_AGE_PENALTY > 60.0:
         return math.inf
-    age_penalty_remaining = min(current - 60.0, MAX_AGE_PENALTY)
-    return round(age_penalty_remaining / AGE_PENALTY_PER_DAY, 1)
+    crossing_age = (base_score - 60.0) / AGE_PENALTY_PER_DAY
+    return round(max(crossing_age - spec.age_days, 0.0), 1)
 
 
 def evaluate(spec: StabilitySpec) -> StabilityResult:
