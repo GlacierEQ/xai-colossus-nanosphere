@@ -12,3 +12,7 @@ jobs:
     with:
       repo_name: ${{ github.event.repository.name }}
       language: python
+      python_version: "3.11"
+      strict: true
+      verify_script: scripts/ci/verify_portfolio_core.sh
+      upload_artifacts: true
