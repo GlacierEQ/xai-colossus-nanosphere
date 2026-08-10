@@ -1,0 +1,31 @@
+{
+  "schema": "glaciereq.proof-receipt.v1",
+  "repository": "GlacierEQ/xai-colossus-nanosphere",
+  "source_sha": "d3aecd39dfb3e8f00e4d2838b2ae1812a0701e11cea393fb078ed116d1311322",
+  "proof_id": "elite-xai-colossus-nanosphere-1786335149",
+  "environment": {
+    "python": "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python",
+    "PYTHONPATH": "/Users/kcbflux/job-app/repos/xai-colossus-nanosphere:/Users/kcbflux/job-app/repos/xai-colossus-nanosphere/src",
+    "entry": "unittest"
+  },
+  "tests": [
+    "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
+  ],
+  "adversarial_tests": [
+    "tests/test_adversarial.py"
+  ],
+  "runtime": {
+    "operate": "scripts/operate.py (x2)",
+    "dual_run_ok": true,
+    "proof_dual_run_ok": true
+  },
+  "result": "PASS",
+  "limitations": [
+    "not production deployed",
+    "reference implementation only"
+  ],
+  "timestamp": "2026-08-10T04:12Z",
+  "artifact_hashes": {
+    "operability_receipt": "54e082b05df6593b055454b9d267a06dba2279c4c037135c3192b8336b761d70"
+  }
+}

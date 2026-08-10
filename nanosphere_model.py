@@ -54,6 +54,8 @@ DEGRADATION_HALFLIFE_DAYS = {
     "ZnO": 100.0,
     "Fe3O4": 75.0,
 }
+# Canonical alias used by circuit_optimizer / apex_integration consumers
+DEGRADATION_HALFLIFE = DEGRADATION_HALFLIFE_DAYS
 
 ALLOWED_BATCH_STATUSES = {"active", "degraded", "replacement_due", "retired"}
 ConductivityModel = Literal["maxwell", "hamilton_crosser"]

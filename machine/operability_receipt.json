@@ -1,0 +1,31 @@
+{
+  "schema": "glaciereq.operability-receipt.v1",
+  "repository": "GlacierEQ/xai-colossus-nanosphere",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "d3aecd39dfb3e8f00e4d2838b2ae1812a0701e11cea393fb078ed116d1311322",
+  "entry": "scripts/operate.py",
+  "primary_output": {
+    "module": "circuit_optimizer",
+    "ok": true,
+    "repository": "GlacierEQ/xai-colossus-nanosphere",
+    "smoke": {
+      "args": [
+        "CircuitRequirements(circuit_id='sample_c",
+        "[]"
+      ],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "fn",
+      "name": "export_recommendation",
+      "result": {
+        "base_fluid": "water",
+        "circuit_id": "sample_circuit_id",
+        "generated_at": "2026-08-10T04:15:50.315707",
+        "recommendation": null,
+        "top_10": []
+      }
+    }
+  },
+  "dual_run_ok": true,
+  "result": "PASS"
+}

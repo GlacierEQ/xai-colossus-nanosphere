@@ -1,0 +1,11 @@
+{
+  "schema": "glaciereq.promotion-authority-grant.v1",
+  "repository": "GlacierEQ/xai-colossus-nanosphere",
+  "source_sha": "d3aecd39dfb3e8f00e4d2838b2ae1812a0701e11cea393fb078ed116d1311322",
+  "proof_receipt_digest": "de4246b4852070106de7a0e539ec969d8f8d6419218bdf4eda7ac35f4503a25b",
+  "not_after": 1788927149.234226,
+  "mac": "eba6bd53aeeaf7513c66abf6a7536765a076ff4b011865aaa6f11634757d5024",
+  "issuer": "local_operator_promotion_authority",
+  "verified": true,
+  "secret_ref": "src/promotion_authority.py::LOCAL_OPERATOR_SECRET"
+}
